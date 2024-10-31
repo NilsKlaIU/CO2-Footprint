@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CO<sub>2</sub>-Emissionsdaten</title>
+
+    <!-- Link zum JavaScript Code-->
+    <script src="JavaScript/scripts.js" defer></script> <!-- Füge deine JS-Datei hier ein -->
+
+  </head>
+  <body>
+    
+      <h1>CO<sub>2</sub>-Emissionsdaten</h1>
+
+      <!-- Einleitungstext -->
+      <div class="mb-4">
+        <p>
+          Diese Tablle zeigt die CO<sub>2</sub>-Emissionsdaten verschiedener Länder und Unternehmen an. 
+          Sie können die Daten nach Land oder Unternehmen filtern, um spezifische Informationen zu finden. 
+          Darüber hinaus können Sie die Tabelle nach den Emissionen,den Ländernamen und Unternehmen 
+          sortieren, indem Sie auf die entsprechenden Spaltenüberschriften klicken. 
+          Die Pfeile neben den Überschriften zeigen an, in welcher Reihenfolge die Daten aktuell sortiert sind.
+        </p>
+      </div>
+
+      <!-- Eingabefeld zur Filterung nach Ländern -->
+      <div class="form-row mb-4 mt-3 col">
+        <label for="countryFilter"><b>Land filtern:</b></label>
+        <input
+          type="text"
+          id="countryFilter"
+          class="form-control"
+          placeholder="Land eingeben"
+        />
+      </div>
+
+      <!-- Eingabefeld zur Filterung nach Unternehmen -->
+      <div class="form-row mb-4 col">
+        <label for="companyFilter"><b>Unternehmen filtern:</b></label>
+        <input
+          type="text"
+          id="companyFilter"
+          class="form-control"
+          placeholder="Unternehmen eingeben"
+        />
+      </div>
+
+      <!-- Button zum Zurücksetzen der Filter -->
+      <button id="resetButton" class="btn btn-dark form-row mb-4 col">
+        Zurücksetzen
+      </button>
+
+      <!-- Tabelle zur Anzeige der CO<sub>2</sub>-Emissionsdaten -->
+      <div class="d-flex justify-content-center mb-4">
+        <table class="table table-striped table-bordered" id="emissionTable">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">Land<span class="sort-arrow"></span></th>
+              <th onclick="sortTable(1)">Unternehmen<span class="sort-arrow"></span></th>
+              <th onclick="sortTable(2)">CO<sub>2</sub>-Emissionen (in Tonnen)<span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody id="emissionDataBody"></tbody>
+        </table>
+      </div>
+  </body>
+</html>

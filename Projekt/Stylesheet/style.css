@@ -1,0 +1,174 @@
+/*************************** Header **************************/
+
+/* Content Header */
+
+#main-header {
+  font-family: "Allura", cursive; /* Schriftart */
+  background: url('../Bilder/Logo.png') no-repeat center, linear-gradient(to right, #d10d0d, #1088c0)
+  
+}
+
+/* Hauptüberschrift Header */
+
+.display-1 {
+  text-decoration: none; /* Text-Dekoration entfernen */
+}
+
+/*************************** Menü **************************/
+
+/* Menü Titel */
+
+.menu-title {
+  font-size: 40px; /* Schriftgröße */
+  color: #000000; /* Textfarbe */
+  font-weight: bold; /* Fettgedruckter Text */
+  text-align: center; /* Text zentrieren */
+  font-family: "Allura", cursive; /* Schriftart */
+}
+
+/* Menü Content Mitte */
+
+a {
+  text-align: center; /* Text zentrieren */
+}
+
+/* Menü Padding */
+
+.menu-col {
+  padding: 20px;
+}
+
+/* Menü Optik */
+
+.nav-item {
+  border-top: 2px solid #d10d0d; /* Farbe des Rahmens */
+  border-radius: 5px; /* Abgerundete Ecken */
+  margin-bottom: 5px; /* Abstand zwischen den Links */
+  padding: 10px; /* Innenabstand für die Links */
+  transition: background-color 0.3s; /* Übergangseffekt für Hover */
+  font-family: cursive;
+  font-weight: bold;
+}
+
+/* Menü Content Schrift */
+
+.navbar a {
+  font-size: large;
+  transition: background-color 0.3s; /* Übergangseffekt für Hover */
+}
+
+
+/* Menü Flexbox */
+
+.row {
+  display: flex; /* Flexbox aktivieren */
+}
+
+/* Schriftkultur */
+
+/* Stile für die LTR-Anzeige https://www.mediaevent.de/css/text.html */
+
+html[dir="ltr"] {
+  flex-direction: row; /* LTR: Menü links, FAQ rechts */
+}
+
+/* Stile für die RTL-Anzeige */
+html[dir="rtl"] {
+  flex-direction: row-reverse; /* RTL: Menü rechts, FAQ links */
+}
+
+/*************************** Hauptseite Content **************************/
+
+#main-content {
+  border-left: 2px solid #d10d0d; /* Rote Linie links des Hauptinhalts */
+  border-right: 2px solid #1088c0; /* Rote Linie rechts des Hauptinhalts */
+  padding: 40px;
+  text-align: justify; 
+  font-family: Arial;
+}
+
+/* Hauptseite Content Überschrift*/
+
+h1 {
+  text-decoration: underline;
+  font-weight: bold; /* Fettgedruckter Text */
+}
+
+/*************************** FAQ **************************/
+
+#faq-section {
+  text-align: justify;
+  text-align-last: center;
+  padding: 40px;
+}
+
+/*************************** Hero **************************/
+
+/* Verstecken des Hero */
+.hidden {
+  display: none; /* Inhalt ist standardmäßig versteckt */
+}
+
+/* Cotent Hero-Bereich */
+.hero {
+  background-image: url("../Bilder/hero-image.jpg"); /* https://www.sonnenseite.com/de/zukunft/was-wir-heute-uebers-klima-wissen-2/ */
+  background-size: cover; /* Bild deckt den gesamten Bereich ab */
+  background-position: center; /* Bild wird zentriert */
+  height: 100vh; /* Höhe des Hero-Bereichs */
+
+  display: flex; /* Aktiviert Flexbox */
+  flex-direction: column; /* Ordnet die Elemente in einer Spalte an */
+  align-items: center; /* Zentriert Elemente horizontal */
+  justify-content: center; /* Zentriert Elemente vertikal */
+
+  text-align: center; /* Text zentrieren */
+  color: black; /* Textfarbe */
+  font-family: Arial, sans-serif; /* Schriftart */
+}
+
+/* Überschrift Hero-Bereich */
+
+.hero h1 {
+  font-size: 60px; 
+  font-weight: bold; 
+  color: black; 
+  font-family: "Allura", cursive; 
+  background-color: rgba(218, 219, 194, 0.8);
+  display: inline-block; 
+  padding: 15px; 
+}
+
+/* Button Hero-Bereich */
+
+.hero button {
+  font-size: 1.2rem; 
+  padding: 10px 20px; 
+  border-radius: 50px; 
+  transition: background-color 0.3s, transform 0.2s; 
+  margin-top: 10px; 
+  background-color: green;
+}
+
+/*************************** Tabelle **************************/
+
+/* Pfeile Sortierung */
+
+.sort-arrow {
+  margin-left: 5px;
+  font-size: 0.8em; /* Pfeile kleiner machen */
+  color: gray; /* Farbe der Pfeile */
+}
+.asc::after {
+  content: " ▲"; /* Aufsteigend Pfeil */
+}
+.desc::after {
+  content: " ▼"; /* Absteigend Pfeil */
+}
+
+/*************************** Tabelle **************************/
+
+/* Einführung Partner*/
+
+#intro-partner{
+  font-size: 20px;
+}
